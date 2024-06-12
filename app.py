@@ -112,7 +112,7 @@ def process_images_to_csv(image_paths, output_folder, min_confidence=80):
     return df, csv_buffer.getvalue()
 
 # Streamlit UI
-st.title("Barcode and OCR Processor")
+st.title("Barcode and Product Code Extractor")
 st.write("Upload images to process barcodes and extract text")
 
 uploaded_files = st.file_uploader("Choose images", accept_multiple_files=True, type=['png', 'jpg', 'jpeg'])
