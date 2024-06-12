@@ -1,6 +1,6 @@
 pandas
 numpy
 pytesseract
-opencv-python
+opencv-python-headless
 matplotlib
 pyzbar
