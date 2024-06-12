@@ -113,7 +113,11 @@ def process_images_to_csv(image_paths, output_folder, min_confidence=80):
 
 # Streamlit UI
 st.title("Barcode and Product Code Extractor")
-st.write("Upload images to process barcodes and extract text")
+st.write("Upload images to generate a CSV file with extracted barcode and text data.")
+# Add a link to the Google Sheet template
+st.markdown("""
+<p style='font-size: 14px;'> <a href="https://docs.google.com/spreadsheets/d/10G-1cvhLBmcMP8TjM99qbszRZAZoBtA2heoZ99nZagc/edit?usp=sharing" target="_blank">Google Sheet Template for the generated CSV</a></p>
+""", unsafe_allow_html=True)
 
 uploaded_files = st.file_uploader("Choose images", accept_multiple_files=True, type=['png', 'jpg', 'jpeg'])
 
