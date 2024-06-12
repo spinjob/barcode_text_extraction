@@ -1,0 +1,6 @@
+pandas
+numpy
+pytesseract
+opencv-python
+matplotlib
+pyzbar
